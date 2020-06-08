@@ -1,0 +1,62 @@
+<script>
+    // Prepare React setup function if not defined yet
+    window.tao.f.setupMVTScripts = window.tao.f.setupMVTScripts || function() {
+        if (!window.tao.g.setupMVTScriptRun) {
+            // Adjust styles for other elements on page
+            tao.f.insertNode(`
+                <style>
+                    body > *:not(.mvtShow) { 
+                        display: none; 
+                    } 
+                    body > #app { 
+                        display:block!important; 
+                    }
+                </style>`, document.body, 'prepend');
+            tao.f.windu({
+                selector: '#HeaderRegion, #BannerRegion, #FooterRegion',
+                attach: function(elem) {
+                    elem.classList.add('mvtShow')
+                }
+            });
+            // Place React App Dom Element
+            tao.f.windu({
+                name: 'placeReactAppDiv',
+                when: function() {
+                    return !!document.getElementById('HeaderRegion');
+                },
+                do: function() {
+                    tao.f.insertNode('<div id="app"></div>', document.getElementById('HeaderRegion'), 'after');
+                }
+            });
+            // App Styles
+            var mvtStyles = document.createElement('link');
+            mvtStyles.type = "text/css";
+            mvtStyles.rel = "stylesheet";
+            mvtStyles.href = 'https://www.ancestrycdn.com/tao/mvtstyles.css';
+            document.head.appendChild(mvtStyles);
+            // App Script
+            var mvtScript = document.createElement('script');
+            mvtScript.type = 'text/javascript';
+            mvtScript.src = 'https://www.ancestrycdn.com/tao/mvtbundle.js';
+            document.head.appendChild(mvtScript);
+            // prevent duplicate function runs
+            window.tao.g.setupMVTScriptRun = true;
+        }
+    }
+    // Set up variable control function if not defined yet
+    window._mV = window._mV || function(newState) {
+        tao.g.modifyVariables = tao.g.modifyVariables || {};
+        Object.keys(newState).forEach((key) => {
+            tao.g.modifyVariables[key] = newState[key];
+        });
+    }
+    // Run React Setup function in case it hasn't run yet.
+    window.tao.f.setupMVTScripts();
+    // Set this variable variant definition.
+    window._mV({ headerStyle: `bonsai-grid` })
+    window._mV({ headerStyle: `sparkly-dragon` })
+    window._mV({ headerText: `bonsai-grid` })
+    window._mV({ headerText: `sparkly-dragon` })
+    window._mV({ timeline: true })
+    window._mV({ timeline: false })
+</script>
