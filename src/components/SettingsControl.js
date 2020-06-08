@@ -64,7 +64,7 @@ const SettingsControl = () => (
             <SettingsButton 
                 settingGroup="pageSettings"
                 settingAttribute="location" 
-                settingValue="hardoffer" 
+                settingValue="subscribe" 
                 displayText="HOLP" 
             />
             <SettingsButton 

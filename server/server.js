@@ -13,5 +13,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`SVW server is running on port ${port}`);
+    console.log(`Ancestry Offer Pages SPA MVT POC ${port}`);
 });
