@@ -10,10 +10,10 @@ import React from 'react';
 // };
 
 export const disclaimerSups = {
-    freetrial: <sup className="disclaimerSup">†</sup>,
-    save: <span>*</span>,
-    newsandf3: <sup className="disclaimerSup">‡</sup>,
-    ldbm: <sup className="disclaimerSup">§</sup>
+    freetrial: <sup className="disclaimerSup">†</sup>, // Free Trial 
+    save: <span>*</span>, // Attached to any "savings" type messaging
+    newsandf3: <sup className="disclaimerSup">‡</sup>, // Newspapers & Fold3 clarification for All Access
+    ldbm: <sup className="disclaimerSup">§</sup> // Long-Duration Billed Monthly
 }
 
 // const DisclaimerFooter = connect(mapStateToProps)((props) => {

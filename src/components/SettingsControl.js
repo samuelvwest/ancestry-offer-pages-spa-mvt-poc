@@ -112,6 +112,12 @@ const SettingsControl = () => (
                 settingValue="sparkly-dragon" 
                 displayText="Sparkly Dragon" 
             />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="headerStyle" 
+                settingValue="color-columns" 
+                displayText="Color Columns" 
+            />
         </div>
         <div className="settings__group">
             <h5 className="settings__group__name">Header Text</h5>
@@ -141,6 +147,15 @@ const SettingsControl = () => (
                 settingAttribute="timeline" 
                 settingValue={true} 
                 displayText="Present" 
+            />
+        </div>
+        <div className="settings__group">
+            <h5 className="settings__group__name">Offerings</h5>
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="offerStyle" 
+                settingValue="control" 
+                displayText="Control" 
             />
         </div>
     </div>

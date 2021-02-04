@@ -85,6 +85,7 @@ export class OfferPage extends React.Component {
     componentWillMount = () => {
         window.removeEventListener('resize', this.updateDimensions);
         this.setupTargetIntegration();
+        this.offersMap = this.props.subscriptions;
     }
     componentDidMount() {
       window.addEventListener('resize', this.updateDimensions);
@@ -109,7 +110,7 @@ export class OfferPage extends React.Component {
                 {/* <SparklyDragon /> */}
 
                 <HeaderStyle />
-                {/* <Offerings/> */}
+                <Offerings offersMap={this.offersMap} />
             </div>
         )
     }

@@ -17,7 +17,7 @@ const classesMaker = (styleName) => {
 
 const ControlHeader = (props) => {
     if (window.innerWidth < props.pageSettings.breaks.control.tablet) {
-        // Color Grid for Phone on all offer pages
+        // Color Stack for Phone on all offer pages
         return (
             <div className={classesMaker('colorstack')}>
                 <section id="memOptions" className="aboveFoldCon">

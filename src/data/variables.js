@@ -4,7 +4,8 @@ import { getVariablesLocal } from '../actions/variables';
 export const variables = getVariablesLocal() || {
         headerStyle: `control`,
         headerText: `control`,
-        timeline: false
+        timeline: false,
+        offerStyle: `control`
     }
 
 export default variables;
