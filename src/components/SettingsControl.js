@@ -157,6 +157,81 @@ const SettingsControl = () => (
                 settingValue="control" 
                 displayText="Control" 
             />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="offerStyle" 
+                settingValue="sparkly-dragon" 
+                displayText="Sparkly Dragon" 
+            />
+        </div>
+        <div className="settings__group">
+            <h5 className="settings__group__name">Grid Style</h5>
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="gridStyle" 
+                settingValue="control" 
+                displayText="Control" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="gridStyle" 
+                settingValue="sparkly-dragon" 
+                displayText="Sparkly Dragon" 
+            />
+        </div>
+        <div className="settings__group">
+            <h5 className="settings__group__name">Sections</h5>
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="sectionStyle" 
+                settingValue="control" 
+                displayText="Control" 
+            />
+        </div>
+        <div className="settings__group">
+            <h5 className="settings__group__name">Emphasis</h5>
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="unset" 
+                displayText="Control" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="us 1month" 
+                displayText="US 1 Month" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="us 6month" 
+                displayText="US 6 Month" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="we 1month" 
+                displayText="WE 1 Month" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="we 6month" 
+                displayText="WE 6 Month" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="aa 1month" 
+                displayText="AA 1 Month" 
+            />
+            <SettingsButton 
+                settingGroup="variables"
+                settingAttribute="currentPlan" 
+                settingValue="aa 6month" 
+                displayText="AA 6 Month" 
+            />
         </div>
     </div>
 )

@@ -1,0 +1,170 @@
+.container--bonsaigrid #benefitListCon {
+    padding-left: 46px;
+}
+
+.container--bonsaigrid #benefitListCon #testimonials {
+    clear: right;
+    float: right;
+    margin: 65px 0 0;
+    max-width: 264px;
+    width: 30%;
+}
+
+.container--bonsaigrid #benefitListCon #testimonials p.quote {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 22px;
+    margin: 0 0 10px;
+}
+
+.container--bonsaigrid #benefitListCon #testimonials p.source {
+    text-align: right;
+}
+
+.container--bonsaigrid #benefitListCon .rounded {
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.container--bonsaigrid #benefitListCon .rounded.topleft {
+    border-radius: 5px 0 0 0;
+}
+
+.container--bonsaigrid #benefitListCon .rounded.topright {
+    border-radius: 0 5px 0 0;
+}
+
+.container--bonsaigrid #benefitListCon .rounded.bottom {
+    border-radius: 0 0 5px 5px;
+}
+
+.container--bonsaigrid #benefitListCon .rounded.bottomright {
+    border-radius: 0 0 5px 0;
+}
+
+.container--bonsaigrid #compareTable2 {
+    padding: 0;
+    position: relative;
+    width: 68%;
+}
+
+.container--bonsaigrid #compareTable2 .tableHeadingWrap {
+    border-right: 1px solid #ada595;
+    display: block;
+    padding-top: 55px;
+    position: relative;
+}
+
+.container--bonsaigrid #compareTable2 .tableHeading {
+    background-color: rgba(134, 202, 227, 0.1);
+    border: 1px solid #ada595;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    color: #37494E;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    height: 55px;
+    margin: 0;
+    padding: 7px 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 2px;
+    width: 88px;
+}
+
+.container--bonsaigrid #compareTable2 #usTab {
+    right: 176px;
+}
+
+.container--bonsaigrid #compareTable2 #worldTab {
+    right: 88px;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt {
+    background-color: #fff;
+    display: block;
+    border: 1px solid #ada595;
+    border-bottom-width: 0;
+    margin-top: 0;
+    padding: 7px 274px 7px 12px;
+    position: relative;
+    zoom: 1;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .textsml {
+    display: block;
+    line-height: 142%;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .leafCol {
+    bottom: 0;
+    border-left: 1px solid #ada595;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 88px;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .leafCol > .iconLeaf {
+    display: block;
+    left: 50%;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    position: absolute;
+    top: 50%;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .leafCol.usCol {
+    background-color: #fffef0;
+    right: 176px;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .leafCol.worldCol {
+    background-color: #f3f6d8;
+    right: 88px;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt .leafCol.worldPlusCol {
+    background-color: #fdf9d8;
+}
+
+.container--bonsaigrid #compareTable2 .compareTxt.rounded.bottom {
+    border-bottom-width: 1px;
+}
+
+
+
+
+.container--bonsaigrid .otherBenefitsCon { background:#fff; }
+.container--bonsaigrid .otherBenefitsCon .guaranteeCon { padding:20px 20px 40px; }
+.container--bonsaigrid .otherBenefitsCon .guaranteeSealImg { float:left; margin-right:15px; width:70px; }
+.container--bonsaigrid .otherBenefitsCon .exploreCon { background:#f0eee9; padding:30px 20px 40px; }
+.container--bonsaigrid .otherBenefitsCon .growCon { color:#fff; padding:40px 20px; }
+.container--bonsaigrid .otherBenefitsCon .goCon { background:#f0eee9; min-height:193px; padding:40px 20px; }
+.container--bonsaigrid .otherBenefitsCon .getCon { color:#fff; padding:40px 20px; }
+.container--bonsaigrid .otherBenefitsCon .quoteCon { background:#f2f1e9; padding:20px 20px 40px; }
+.container--bonsaigrid .otherBenefitsCon .finalCTACon { padding:40px 20px; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite { float:left; margin:auto; width:173px; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.loadedBgImg { background-image:url('https://www.ancestrycdn.com/mars/landing/offer/us/ftlp-mobile/ftlp-mobile-more-sprite3.png'); background-repeat:no-repeat; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.exploreImg { background-position:0 0; height:120px; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.growImg { background-position:0 -128px; height:110px; margin-bottom:30px; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.goImg { background-position:0 -253px; height:142px; }
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.getImg { background-color:#fff; background-position:0 -408px; height:123px; margin:0 20px 50px 0; }
+.container--bonsaigrid .otherBenefitsCon h3 { margin-top:0;}
+.container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.quoteImg { background-position:-44px -538px; float:left; height:81px; margin-right:20px; width:83px; }
+.container--bonsaigrid .otherBenefitsCon .quote { background-color:#fff; border-radius:20px; font-family:Georgia; font-size:22px; font-style:italic; line-height:38px; padding:30px 35px; position:relative; }
+.container--bonsaigrid .otherBenefitsCon .quoteArrow { border:20px solid #fff; border-left-color:transparent; border-bottom-color:transparent; position:absolute; bottom:-30px; left:2px; }
+.container--bonsaigrid .otherBenefitsCon .quoteNameCon { padding:45px 20px 0; }
+.container--bonsaigrid .otherBenefitsCon .btnCon { margin:auto; width:220px; }
+.container--bonsaigrid .otherBenefitsCon .finalCTACon a{ border-radius:20px; margin-top:-20px; text-transform:inherit; width:220px; }
+
+@media only screen and (max-width:480px) {
+    .container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.loadedBgImg { float:none; }
+    .container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.growImg { margin-bottom:0; }
+    .container--bonsaigrid .otherBenefitsCon .fullPgImgSprite.getImg { margin:auto; }
+    .container--bonsaigrid .otherBenefitsCon h3 { margin-top:20px;}
+}

@@ -1,0 +1,29 @@
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon { background:#fff; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .guaranteeCon { padding:20px 20px 40px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .guaranteeSealImg { float:left; margin-right:15px; width:70px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .exploreCon { background:#f0eee9; padding:30px 20px 40px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .growCon { color:#fff; padding:40px 20px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .goCon { background:#f0eee9; min-height:193px; padding:40px 20px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .getCon { color:#fff; padding:40px 20px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .quoteCon { background:#f2f1e9; padding:20px 20px 40px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .finalCTACon { padding:40px 20px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite { float:left; margin:auto; width:173px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.loadedBgImg { background-image:url('https://www.ancestrycdn.com/mars/landing/offer/us/ftlp-mobile/ftlp-mobile-more-sprite3.png'); background-repeat:no-repeat; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.exploreImg { background-position:0 0; height:120px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.growImg { background-position:0 -128px; height:110px; margin-bottom:30px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.goImg { background-position:0 -253px; height:142px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.getImg { background-color:#fff; background-position:0 -408px; height:123px; margin:0 20px 50px 0; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon h3 { margin-top:0;}
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.quoteImg { background-position:-44px -538px; float:left; height:81px; margin-right:20px; width:83px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .quote { background-color:#fff; border-radius:20px; font-family:Georgia; font-size:22px; font-style:italic; line-height:38px; padding:30px 35px; position:relative; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .quoteArrow { border:20px solid #fff; border-left-color:transparent; border-bottom-color:transparent; position:absolute; bottom:-30px; left:2px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .quoteNameCon { padding:45px 20px 0; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .btnCon { margin:auto; width:220px; }
+.benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .finalCTACon a{ border-radius:20px; margin-top:-20px; text-transform:inherit; width:220px; }
+
+@media only screen and (max-width:480px) {
+    .benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.loadedBgImg { float:none; }
+    .benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.growImg { margin-bottom:0; }
+    .benefits-style.benefits-style--bonsaigrid .otherBenefitsCon .fullPgImgSprite.getImg { margin:auto; }
+    .benefits-style.benefits-style--bonsaigrid .otherBenefitsCon h3 { margin-top:20px;}
+}

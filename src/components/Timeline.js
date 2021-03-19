@@ -6,7 +6,8 @@ const mapStateToProps = (state) => {
     return {
         pageSettings: state.pageSettings,
         variables: state.variables,
-        subscriptions: state.subscriptions
+        subscriptions: state.subscriptions,
+        currentPlan: state.pageSettings.currentPlan === 'unset' ? state.variables.currentPlan === 'unset' ? 'us 1month' : state.variables.currentPlan : state.pageSettings.currentPlan
     }
 };
 
@@ -25,7 +26,7 @@ const Timeline = connect(mapStateToProps)((props) => {
         // console.log(firstDay, ftEnd);
         return (
             <div className="mytimelineWrapper mytimelineWrapper-desk">
-                <div className="mytimeline usdis-bgcolor" id="mytimeline-md">
+                <div className={props.variables.offerStyle === 'sparkly-dragon' ? props.currentPlan.slice(0,2) === 'us' ? "mytimeline usdis-bgcolor" : props.currentPlan.slice(0,2) === 'we' ? "mytimeline worldex-bgcolor" : "mytimeline allacc-bgcolor" : "mytimeline usdis-bgcolor"} id="mytimeline-md">
                     <div className="myleft-circle">
                         <div className="mydot-circle"></div>
                     </div>

@@ -1,16 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { modifyPageSettings } from '../actions/pageSettings';
+import { getPageSettingsLocal, modifyPageSettings } from '../actions/pageSettings';
 import { denyType } from '../actions/pageSettings';
 import { modifyVariables } from '../actions/variables';
 import SettingsControl from './SettingsControl';
+import ColorColumns from '../pages/ColorColumns';
 import ColorStack from '../pages/ColorStack';
 import ColorGrid from '../pages/ColorGrid';
 import BonsaiGrid from '../pages/BonsiaGrid';
 import GreenTop from '../pages/GreenTop';
 import SparklyDragon from '../pages/SparklyDragon';
 import HeaderStyle from './HeaderStyle';
-import Offerings from './Offerings';
+import Offerings from './offerings/Offerings';
+import CompareGrid from './sections/CompareGrids'
+import OtherBenefits from './sections/OtherBenefits'
+import FooterOfferings from './sections/FooterOfferings'
+import Legal from './sections/LegalText';
+import pageSettings from '../reducers/pageSettings';
 
 const mapStateToProps = (state) => ({
     pageSettings: state.pageSettings,
@@ -37,6 +43,18 @@ export class OfferPage extends React.Component {
     //         newState 
     //     ));
     // }
+    initCurrentPlan = () => {
+        if (this.props.pageSettings.currentPlan === 'unset') {
+            if (this.props.variables.currentPlan != 'unset') {
+                this.props.modifyPageSettings({
+                    currentPlan: this.props.variables.currentPlan
+                })
+            } 
+        } else if (getPageSettingsLocal()) {
+            let localPageSettings = getPageSettingsLocal()
+            this.props.pageSettings.currentPlan = localPageSettings.currentPlan
+        }
+    }
     setTitleAttribute = () => {
         document.title = this.props.pageSettings.location === `freetrial` ? 
             `Start your FREE trial at Ancestry` : this.props.pageSettings.location === 'hardoffer' ? 
@@ -86,6 +104,7 @@ export class OfferPage extends React.Component {
         window.removeEventListener('resize', this.updateDimensions);
         this.setupTargetIntegration();
         this.offersMap = this.props.subscriptions;
+        this.initCurrentPlan();
     }
     componentDidMount() {
       window.addEventListener('resize', this.updateDimensions);
@@ -102,15 +121,21 @@ export class OfferPage extends React.Component {
         return (
             <div>
                 {!!this.props.pageSettings.showSettings && <SettingsControl />}
-
                 {/* <ColorStack /> */}
+                {/* <ColorColumns /> */}
                 {/* <ColorGrid /> */}
                 {/* <BonsaiGrid /> */}
                 {/* <GreenTop /> */}
                 {/* <SparklyDragon /> */}
-
+                {/* Hero includes Header and Offerings MAYBE */}
+                {/* <Hero/> */}
                 <HeaderStyle />
                 <Offerings offersMap={this.offersMap} />
+                <CompareGrid />
+                {/* <OtherBenefits /> */}
+                {/* FooterOfferings shows deny offer box or back to top button */}
+                {/* <FooterOfferings /> */}
+                <Legal />
             </div>
         )
     }

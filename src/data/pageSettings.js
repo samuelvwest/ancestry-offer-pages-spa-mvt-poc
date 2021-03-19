@@ -13,7 +13,8 @@ export const pageSettings = getPageSettingsLocal() || {
                 tablet: 601,
                 desktop: 769
             }
-        }
+        },
+        currentPlan: 'unset'
     }
 
 pageSettings.denyType = denyType(pageSettings.location, window.deniedTo);
